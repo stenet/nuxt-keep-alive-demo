@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import type { KeepAliveProps } from "@vue/runtime-core";
+
+const keepalive: KeepAliveProps = {
+  max: 10,
+  exclude: ["NoKeepAlive"]
+};
 </script>
+
 <template>
   <div>
     <nav>
@@ -15,7 +22,7 @@
       <NuxtLink to="/no-keep-alive">No keep alive</NuxtLink>
     </nav>
     
-    <NuxtPage></NuxtPage>
+    <NuxtPage :keepalive="keepalive"></NuxtPage>
   </div>
 </template>
 

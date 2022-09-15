@@ -1,8 +1,4 @@
 ﻿<script lang="ts" setup>
-definePageMeta({
-  keepalive: true
-});
-
 const router = useRouter();
 </script>
 

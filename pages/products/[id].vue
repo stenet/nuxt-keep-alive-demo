@@ -1,9 +1,4 @@
 ﻿<script lang="ts" setup>
-
-definePageMeta({
-  keepalive: true
-});
-
 const route = useRoute();
 </script>
 
